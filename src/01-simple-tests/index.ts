@@ -23,7 +23,6 @@ export const simpleCalculator = (
 ): number | null => {
   if (isInputValid(rawInput)) {
     const { a, b, action } = rawInput;
-
     switch (action) {
       case Action.Add:
         return a + b;
